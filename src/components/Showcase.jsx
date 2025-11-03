@@ -3,7 +3,7 @@ import {useMediaQuery} from "react-responsive";
 import {useGSAP} from "@gsap/react";
 import gsap from "gsap";
 
-export const Showcase = () => {
+const Showcase = () => {
     const isTablet = useMediaQuery({query:'(max-width: 1024px)'})
 
     useGSAP(() => {
@@ -72,3 +72,4 @@ export const Showcase = () => {
         </section>
     )
 }
+export default Showcase
